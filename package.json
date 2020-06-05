@@ -1,0 +1,24 @@
+{
+  "name": "covid-quiz",
+  "description": "",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matheus Henrique",
+    "email": "matheushenriqueplus99@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheus2x/covid-quiz.git"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.mit.edu/~amini/LICENSE.md"
+    }
+  ],
+  "homepage": "https://github.com/matheus2x/covid-quiz#readme",
+  "bugs": {
+    "url": "https://github.com/matheus2x/covid-quiz#issues"
+  }
+}
