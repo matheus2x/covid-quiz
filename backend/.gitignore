@@ -5,6 +5,7 @@
 
 # misc
 .vscode
+temp.js
 
 # production
 .env
