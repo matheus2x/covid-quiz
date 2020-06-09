@@ -19,9 +19,10 @@
 
 ## :thinking: What is this?
 
-Basically a Monorepo of a <strong>Web</strong>, <strong>Mobile</strong> and <strong>Server</strong> application that helps people to consult cases of covid-19 and play some mini-games. 
+Basically a Monorepo of a <strong>Web</strong> and <strong>Server</strong> application that helps people to consult cases of covid-19 and play some mini-games. 
 
-This application was developed for an academic work by the <strong>UNINOVE</strong> institution distributed by professor <strong>Debora Canne</strong>. The idea of ​​creating an application focused on good practices and access to information about <strong>covid-19</strong> arose from the need to raise awareness among people during the pandemic.
+This application was developed for an academic work by the <strong>UNINOVE</strong> institution distributed by professor <strong>Debora Canne</strong>.
+The idea of ​​creating an application focused on good practices and access to information about <strong>covid-19</strong> arose from the need to raise awareness among people during the pandemic.
 
 <a id="techs-used"></a>
 
