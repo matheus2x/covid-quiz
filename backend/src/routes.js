@@ -12,4 +12,6 @@ routes.get("/", (req, res) => {
 routes.get("/countries", CountryController.index);
 routes.get("/countries/:country_id/states", StateController.index);
 
+routes.get("/states/:state_id", StateController.show);
+
 module.exports = routes;

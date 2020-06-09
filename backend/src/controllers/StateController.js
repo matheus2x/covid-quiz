@@ -25,4 +25,22 @@ module.exports = {
 
     return res.json(states);
   },
+
+  async show(req, res) {
+    const { state_id } = req.params;
+
+    const state = await State.findByPk(state_id);
+
+    if (!state) {
+      return res.status(400).json({ error: "State not found." });
+    }
+
+    const pasterializedState = {
+      name: state.name,
+      iso_subid: state.iso_subid,
+      type: state.type,
+    };
+
+    return res.json(pasterializedState);
+  },
 };
