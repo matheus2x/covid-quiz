@@ -14,6 +14,10 @@ class Country extends Model {
       }
     );
   }
+
+  static associate(models) {
+    this.hasMany(models.State, { foreignKey: "country_id", as: "states" });
+  }
 }
 
 module.exports = Country;
