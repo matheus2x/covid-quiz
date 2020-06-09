@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" title="#logo" width="300px" src=".github/logo.svg"><br>
+    <img alt="Logo" title="#logo" width="400px" src=".github/logo.svg"><br>
 </h1>
 <p align="center">Monorepo of covid-quiz</p>
 
@@ -29,6 +29,7 @@ The idea of ​​creating an application focused on good practices and access t
 ## :rocket: Techs used
 
 - **Node.js** - A JavaScript Interpreter
+- **Yarn** - A Better Node Package Manager
 - **MySQL** - A Relational Database
 - **Sequelize** - A Object-Relational-Mapping for Database
 - **ReactJS** - A Frontend Framework
@@ -36,6 +37,14 @@ The idea of ​​creating an application focused on good practices and access t
 <a id="getting-started"></a>
 
 ## :fire: Getting started
+
+- ### You may **need** to install:
+
+    - A **Distributed Version-Control-System** -> [Git](https://git-scm.com/ "Git")
+    - Backend **Interpreter** -> [Node.js](https://nodejs.org/ "Node.js")
+    - Some **Package Manager Like** -> [NPM](https://www.npmjs.com/) **or** [Yarn](https://yarnpkg.com/)
+    - The Relational **Database** -> [MySQL](https://www.mysql.com/ "MySQL")
+
 
 1. Clone this repo with:
 ```sh
@@ -77,6 +86,7 @@ The idea of ​​creating an application focused on good practices and access t
 
 ## :link: Useful URLs
 
+- [Git](https://git-scm.com/ "Git")
 - [Node](https://nodejs.org/ "Node")
 - [Yarn](https://yarnpkg.com/ "Yarn")
 - [MySQL](https://www.mysql.com/ "MySQL")
