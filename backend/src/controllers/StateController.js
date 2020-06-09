@@ -1,10 +1,6 @@
 const State = require("../models/State");
 const Country = require("../models/Country");
 
-const iso_3166 = require("iso-3166-2");
-
-// const countriesData = require("./genCountriesData");
-
 module.exports = {
   async index(req, res) {
     const { country_id } = req.params;

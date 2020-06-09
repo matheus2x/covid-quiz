@@ -16,6 +16,7 @@ class State extends Model {
 
   static associate(models) {
     this.belongsTo(models.Country, { foreignKey: "country_id", as: "country" });
+    this.hasMany(models.User, { foreignKey: "state_id", as: "users" });
   }
 }
 
