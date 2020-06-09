@@ -2,6 +2,24 @@ const State = require("../models/State");
 const User = require("../models/User");
 
 module.exports = {
+  async index(req, res) {
+    const { state_id } = req.params;
+
+    const state = await State.findByPk(state_id, {
+      include: { association: "users" },
+    });
+
+    const pasterializedState = {
+      country_id: state.country_id,
+      name: state.name,
+      iso_subid: state.iso_subid,
+      type: state.type,
+      users: state.users,
+    };
+
+    return res.json(pasterializedState);
+  },
+
   async store(req, res) {
     const { state_id } = req.params;
     const { name, username, password } = req.body;

@@ -16,5 +16,6 @@ routes.get("/countries/:country_id/states", StateController.index);
 routes.get("/states/:state_id", StateController.show);
 
 routes.post("/states/:state_id/users", UserController.store);
+routes.get("/states/:state_id/users", UserController.index);
 
 module.exports = routes;
