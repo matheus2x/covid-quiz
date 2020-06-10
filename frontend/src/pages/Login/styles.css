@@ -1,0 +1,163 @@
+#decal1,
+#decal2,
+#decal3,
+#decal4,
+#decal5 {
+  position: absolute;
+}
+
+#decal1 {
+  top: 159px;
+  left: 55px;
+}
+
+#decal2 {
+  top: 68px;
+  left: 600px;
+}
+
+#decal3 {
+  top: 140px;
+  right: 47px;
+}
+
+#decal4 {
+  bottom: 17px;
+  left: 730px;
+}
+
+#decal5 {
+  bottom: 53px;
+  right: 102px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 946px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/***** uncle sam side *****/
+#stay-home {
+  width: 100%;
+  max-width: 360px;
+}
+
+#stay-home img {
+  text-align: center;
+}
+
+#stay-home h2 {
+  font-family: "Ewert", cursive;
+  font-size: 52px;
+  font-weight: normal;
+}
+
+#stay-home h3 {
+  font-family: "Ewert", cursive;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+span.red {
+  text-shadow: 1px 0 0 #ff0000, -1px 0 0 #ff0000, 0 1px 0 #ff0000;
+}
+
+/***** form side *****/
+section.form {
+  width: 100%;
+  max-width: 394px;
+  margin-top: -120px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.logo h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-right: 13px;
+}
+
+.logo span {
+  font-family: "Fredoka One", cursive;
+  font-size: 31px;
+  color: #dd5555;
+  text-shadow: 1px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+section.form form h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 14px;
+  line-height: 37.5px;
+}
+
+section.form form .submit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.form form .submit-container a {
+  text-decoration: none;
+}
+
+section.form form .submit-container a #register {
+  background-color: #dd5555;
+  height: 60px;
+  width: 233px;
+  border-radius: 8px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s;
+}
+
+section.form form .submit-container a #register:hover {
+  filter: brightness(90%);
+}
+
+section.form form .submit-container a #register span {
+  margin-left: 7px;
+  font-weight: bold;
+  color: #fff;
+}
+
+section.form form .submit-container button {
+  background-color: #5fc68f;
+  width: 154px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: filter 0.2s;
+}
+
+section.form form .submit-container button:hover {
+  filter: brightness(90%);
+}
+
+section.form form #go-home {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+section.form form #go-home:hover {
+  color: #dd5555;
+}
