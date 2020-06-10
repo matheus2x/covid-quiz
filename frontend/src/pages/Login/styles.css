@@ -86,7 +86,7 @@ section.form {
 .logo h1 {
   font-size: 45px;
   font-weight: bold;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 13px;
 }
 
@@ -150,12 +150,13 @@ section.form form .submit-container button:hover {
   filter: brightness(90%);
 }
 
-section.form form #go-home {
+section.form form a#go-home {
   margin-top: 18px;
   display: flex;
   align-items: center;
   font-size: 18px;
   transition: color 0.2s;
+  width: 65px;
 }
 
 section.form form #go-home:hover {
