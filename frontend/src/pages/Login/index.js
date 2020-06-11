@@ -5,7 +5,8 @@ import "./styles.css";
 
 import uncleSam from "../../assets/login/unclesam.png";
 import decals from "../../assets/login/virus-decal.svg";
-import virus from "../../assets/login/virus.png";
+// import virus from "../../assets/virus.png";
+import Logo from "../../components/Logo";
 
 function Login() {
   return (
@@ -30,12 +31,7 @@ function Login() {
         </div>
 
         <section className="form">
-          <div className="logo">
-            <img src={virus} width="75" alt="Virus" />
-            <h1 className="logo-name">COVID-19</h1>
-            <span className="logo-quiz">QUIZ</span>
-          </div>
-
+          <Logo virusSize={75} covidSize={45} quizSize={31} />
           <form>
             <h2>Entrar / Cadastrar</h2>
 

@@ -76,32 +76,11 @@ section.form {
   margin-top: -120px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-
-.logo h1 {
-  font-size: 45px;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-right: 13px;
-}
-
-.logo span {
-  font-family: "Fredoka One", cursive;
-  font-size: 31px;
-  color: #dd5555;
-  text-shadow: 1px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
-    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-
 section.form form h2 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  margin-top: 70px;
   margin-bottom: 14px;
   line-height: 37.5px;
 }
