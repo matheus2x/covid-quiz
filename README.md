@@ -1,13 +1,16 @@
 <h1 align="center">
     <img alt="Logo" title="#logo" width="400px" src=".github/logo.svg"><br>
 </h1>
-<p align="center">Monorepo of covid-quiz</p>
 
 <p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/matheus2x/covid-quiz?color=%235FC68F&style=plastic">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/matheus2x/covid-quiz?color=%235FC68F&style=plastic">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-informational.svg" alt="License MIT">
+    <img alt="License" src="https://img.shields.io/github/license/matheus2x/covid-quiz?color=%235FC68F&style=plastic">
   </a>
 </p>
+
+<img src=".github/web.png" align="center" />
 
 # Summary
 - [What is this?](#what-is-this)
@@ -40,7 +43,7 @@ The idea of ​​creating an application focused on good practices and access t
 
 - ### You may **need** to install:
 
-    - A **Distributed Version-Control-System** -> [Git](https://git-scm.com/ "Git")
+    - A Distributed **Version-Control-System** -> [Git](https://git-scm.com/ "Git")
     - Backend **Interpreter** -> [Node.js](https://nodejs.org/ "Node.js")
     - Some **Package Manager Like** -> [NPM](https://www.npmjs.com/) **or** [Yarn](https://yarnpkg.com/)
     - The Relational **Database** -> [MySQL](https://www.mysql.com/ "MySQL")
