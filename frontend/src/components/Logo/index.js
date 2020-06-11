@@ -4,7 +4,7 @@ import "./styles.css";
 
 import virus from "../../assets/virus.png";
 
-function Logo({ virusSize, covidSize, quizSize }) {
+const Logo = ({ virusSize, covidSize, quizSize }) => {
   return (
     <div className="logo">
       <img src={virus} width={virusSize} alt="Virus"></img>
@@ -16,6 +16,6 @@ function Logo({ virusSize, covidSize, quizSize }) {
       </span>
     </div>
   );
-}
+};
 
 export default Logo;

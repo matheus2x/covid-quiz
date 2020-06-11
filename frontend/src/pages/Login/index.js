@@ -1,14 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiLogIn, FiArrowLeft } from "react-icons/fi";
 
 import "./styles.css";
 
 import uncleSam from "../../assets/login/unclesam.png";
 import decals from "../../assets/login/virus-decal.svg";
-// import virus from "../../assets/virus.png";
 import Logo from "../../components/Logo";
 
-function Login() {
+const Login = () => {
   return (
     <>
       <div id="decals">
@@ -39,24 +39,24 @@ function Login() {
             <input type="password" placeholder="Senha" />
 
             <div className="submit-container">
-              <a href="/register">
+              <Link to="/register">
                 <div id="register">
                   <FiLogIn size={13} color="#FFF" />
                   <span>Cadastrar-se</span>
                 </div>
-              </a>
+              </Link>
               <button type="submit">Entrar</button>
             </div>
 
-            <a id="go-home" href="/home">
+            <Link id="go-home" to="/">
               <FiArrowLeft size={16} color="#DD5555" />
               Home
-            </a>
+            </Link>
           </form>
         </section>
       </div>
     </>
   );
-}
+};
 
 export default Login;

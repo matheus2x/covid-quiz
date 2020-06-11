@@ -1,0 +1,85 @@
+/**** geral ****/
+.home-container {
+  width: 100%;
+  max-width: 1084px;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+/***** select *****/
+.home-container .selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 87px 0;
+}
+
+.home-container .selection select#country {
+  height: 24px;
+  width: 286px;
+  margin-right: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.home-container .selection select#state {
+  height: 24px;
+  width: 193px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+/***** cases *****/
+section.cases-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 100%;
+  max-width: 108px;
+}
+
+section.cases-container .cases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.cases-container .cases .cases-number {
+  width: 345px;
+  height: 114px;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-size: 36px;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.cases-container .cases .cases-text {
+  width: 345px;
+  height: 46px;
+  margin-bottom: 23px;
+
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-size: 28px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
