@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/matheus2x/covid-quiz?color=%235FC68F&style=plastic">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/matheus2x/covid-quiz?color=%235FC68F&style=plastic">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/matheus2x/covid-quiz?color=%23DD5555">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/matheus2x/covid-quiz?color=%23DD5555">
   <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/github/license/matheus2x/covid-quiz?color=%235FC68F&style=plastic">
+    <img alt="License" src="https://img.shields.io/github/license/matheus2x/covid-quiz?color=%23DD5555">
   </a>
 </p>
 
@@ -44,8 +44,8 @@ The idea of ​​creating an application focused on good practices and access t
 - ### You may **need** to install:
 
     - A Distributed **Version-Control-System** -> [Git](https://git-scm.com/ "Git")
-    - Backend **Interpreter** -> [Node.js](https://nodejs.org/ "Node.js")
-    - Some **Package Manager Like** -> [NPM](https://www.npmjs.com/) **or** [Yarn](https://yarnpkg.com/)
+    - A JavaScript **Interpreter** -> [Node.js](https://nodejs.org/ "Node.js")
+    - Some **Package Manager** Like -> [NPM](https://www.npmjs.com/) **or** [Yarn](https://yarnpkg.com/)
     - The Relational **Database** -> [MySQL](https://www.mysql.com/ "MySQL")
 
 
@@ -82,7 +82,7 @@ The idea of ​​creating an application focused on good practices and access t
   $ yarn
 
   ## Run Web
-  $ yarn dev
+  $ yarn start
 ```
 
 <a id="useful-urls"></a>
