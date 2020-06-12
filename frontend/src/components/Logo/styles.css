@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   align-items: center;
+  max-width: 385px;
 }
 
 .logo h1.logo-name {
