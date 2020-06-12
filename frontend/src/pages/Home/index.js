@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import Header from "../../components/Header";
 
@@ -9,6 +10,26 @@ import deadIcon from "../../assets/home/dead-man.svg";
 import "./styles.css";
 
 const Home = () => {
+  const [cases, setCases] = useState("Loading");
+  const [deaths, setDeaths] = useState("Loading");
+  const [recovereds, setRecovereds] = useState("Loading");
+
+  const getCovidData = async () => {
+    const res = await axios.get("https://covid19api.io/api/v1/AllReports");
+
+    const totalCases = res.data.reports[0].cases;
+    const totalDeaths = res.data.reports[0].deaths;
+    const totalRecovereds = res.data.reports[0].recovered;
+
+    setCases(totalCases);
+    setDeaths(totalDeaths);
+    setRecovereds(totalRecovereds);
+  };
+
+  useEffect(() => {
+    getCovidData();
+  }, []);
+
   return (
     <div className="home-container">
       <Header />
@@ -25,7 +46,7 @@ const Home = () => {
       <section className="cases-container">
         <div className="cases">
           <div style={{ backgroundColor: "#ffaa5c" }} className="cases-number">
-            3.725.801
+            {cases}
           </div>
           <div style={{ color: "#ffaa5c" }} className="cases-text">
             Confirmados
@@ -37,7 +58,7 @@ const Home = () => {
 
         <div className="cases">
           <div style={{ backgroundColor: "#5FC68F" }} className="cases-number">
-            1.241.773
+            {recovereds}
           </div>
           <div style={{ color: "#5FC68F" }} className="cases-text">
             Recuperados
@@ -53,7 +74,7 @@ const Home = () => {
 
         <div className="cases">
           <div style={{ backgroundColor: "#DD5555" }} className="cases-number">
-            258.272
+            {deaths}
           </div>
           <div style={{ color: "#DD5555" }} className="cases-text">
             Mortos
