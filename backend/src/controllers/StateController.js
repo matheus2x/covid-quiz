@@ -5,7 +5,9 @@ module.exports = {
   async index(req, res) {
     const { country_id } = req.params;
 
-    const country = await Country.findByPk(country_id);
+    const country = await Country.findByPk(country_id, {
+      include: { association: "states" },
+    });
 
     if (!country) {
       console.log(country_id);

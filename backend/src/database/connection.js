@@ -11,6 +11,7 @@ Country.init(connection);
 State.init(connection);
 User.init(connection);
 
+Country.associate(connection.models);
 State.associate(connection.models);
 User.associate(connection.models);
 

@@ -15,7 +15,7 @@ class User extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.State, { foreignKey: "state_id", as: "batatou" });
+    this.belongsTo(models.State, { foreignKey: "state_id", as: "state" });
   }
 }
 
