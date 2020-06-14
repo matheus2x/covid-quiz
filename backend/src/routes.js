@@ -8,10 +8,6 @@ const TipController = require("./controllers/TipController");
 
 const routes = express.Router();
 
-routes.get("/", (req, res) => {
-  return res.json({ message: "Hello World!" });
-});
-
 routes.get("/countries", CountryController.index);
 routes.get("/countries/:country_id/states", StateController.index);
 
