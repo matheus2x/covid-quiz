@@ -1,0 +1,81 @@
+/**** geral ****/
+.tips-container {
+  width: 100%;
+  max-width: 1084px;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.tips-container section.section-tip {
+  width: 100%;
+  margin-top: 80px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.tips-container section.section-tip .higher-tip {
+  background-color: #fff;
+  height: 444px;
+  border-radius: 17px;
+  width: 411px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tips-container section.section-tip .right-tips-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-height: 444px;
+  gap: 20px;
+}
+
+.tips-container section.section-tip .right-tips-container .comum-tip-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+  max-height: 209px;
+}
+
+.tips-container section.section-tip .right-tips-container .larger-tip {
+  background-color: #fff;
+  border-radius: 17px;
+  height: 215px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tips-container section.section-tip .right-tips-container .comum-tip {
+  background-color: #fff;
+  border-radius: 17px;
+  height: 100%;
+  width: 100%;
+  max-width: 316px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.higher-tip,
+.larger-tip,
+.comum-tip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span.tip-text {
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 243px;
+  text-align: center;
+  margin-top: 15px;
+  color: #333333;
+}
+
+section.section-tip.to-right {
+  grid-template-columns: 2fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
