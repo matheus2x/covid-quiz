@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Tips from "./pages/Tips";
@@ -10,10 +10,12 @@ import Register from "./pages/Register";
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Route component={Home} path="/" exact />
-      <Route component={Login} path="/login" exact />
-      <Route component={Register} path="/register" exact />
-      <Route component={Tips} path="/tips" exact />
+      <Switch>
+        <Route component={Home} path="/" exact />
+        <Route component={Login} path="/login" />
+        <Route component={Register} path="/register" />
+        <Route component={Tips} path="/tips" />
+      </Switch>
     </BrowserRouter>
   );
 };
