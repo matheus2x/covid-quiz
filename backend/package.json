@@ -18,7 +18,8 @@
     "iso-3166-2": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.12"
+    "sequelize": "^5.21.12",
+    "yup": "^0.29.1"
   },
   "devDependencies": {
     "jest": "^26.0.1",

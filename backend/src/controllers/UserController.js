@@ -1,3 +1,5 @@
+const Yup = require("yup");
+
 const Country = require("../models/Country");
 const State = require("../models/State");
 const User = require("../models/User");
@@ -27,6 +29,16 @@ module.exports = {
   },
 
   async store(req, res) {
+    const schema = Yup.object().shape({
+      name: Yup.string().required(),
+      username: Yup.string().required(),
+      password: Yup.string().required(),
+    });
+
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: "Validation fails" });
+    }
+
     const { state_id } = req.params;
     const { name, username, password } = req.body;
 
@@ -39,7 +51,7 @@ module.exports = {
     const userExists = await User.findOne({ where: { username: username } });
 
     if (userExists) {
-      return res.status(400).json({ error: "User already registered." });
+      return res.status(400).json({ error: "username already registered." });
     }
 
     const user = await User.create({
