@@ -67,10 +67,10 @@ The idea of ​​creating an application focused on good practices and access t
   # Create Database
   $ yarn sequelize db:create
 
-  # Use the Migrations to Create Tables
+  # Run Migrations 
   $ yarn sequelize db:migrate
 
-  # Populate Database with the seeds
+  # Run Seeds
   $ yarn sequelize db:seed:all
 
   # Run Server
