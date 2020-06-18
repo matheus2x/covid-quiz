@@ -20,6 +20,7 @@ module.exports = {
     const { id, name } = user;
 
     return res.json({
+      isLogged: true,
       user: {
         id,
         name,
