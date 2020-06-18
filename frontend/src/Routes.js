@@ -6,6 +6,7 @@ import Tips from "./pages/Tips";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import UserRegister from "./pages/UserRegister";
 
 const Routes = () => {
   return (
@@ -13,7 +14,8 @@ const Routes = () => {
       <Switch>
         <Route component={Home} path="/" exact />
         <Route component={Login} path="/login" />
-        <Route component={Register} path="/register" />
+        <Route component={Register} path="/register" exact />
+        <Route component={UserRegister} path="/register/:state_id/users" />
         <Route component={Tips} path="/tips" />
       </Switch>
     </BrowserRouter>

@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../Logo";
+import Session from "../Session";
 
 import "./styles.css";
 
 const Header = () => {
+  const loggedStatus = localStorage.getItem("logged-user-status");
+  const username = localStorage.getItem("username");
+
   return (
     <header className="header">
       <Link to="/">
@@ -23,9 +27,7 @@ const Header = () => {
         </Link>
       </ul>
 
-      <Link className="login" to="/login">
-        <span>Iniciar Sessão</span>
-      </Link>
+      <Session logged={loggedStatus} username={username} />
     </header>
   );
 };

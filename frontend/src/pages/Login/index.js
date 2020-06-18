@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { FiLogIn, FiArrowLeft } from "react-icons/fi";
+
+import axios from "axios";
 
 import "./styles.css";
 
@@ -9,6 +11,31 @@ import decals from "../../assets/login/virus-decal.svg";
 import Logo from "../../components/Logo";
 
 const Login = () => {
+  const history = useHistory();
+
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const username = document.getElementById("login-form")[0].value;
+    const password = document.getElementById("login-form")[1].value;
+
+    try {
+      const response = await axios.post("http://localhost:3333/sessions", {
+        username,
+        password,
+      });
+
+      const { isLogged } = response.data;
+
+      localStorage.setItem("logged-user-status", isLogged);
+      localStorage.setItem("username", username);
+
+      return history.push("/");
+    } catch (err) {
+      alert("Error: User not registered");
+    }
+  }
+
   return (
     <>
       <div id="decals">
@@ -32,11 +59,11 @@ const Login = () => {
 
         <section className="form">
           <Logo virusSize={75} covidSize={45} quizSize={31} />
-          <form>
+          <form id="login-form" onSubmit={handleFormSubmit}>
             <h2>Entrar / Cadastrar</h2>
 
-            <input type="text" placeholder="Usuário" />
-            <input type="password" placeholder="Senha" />
+            <input type="text" placeholder="Usuário" required />
+            <input type="password" placeholder="Senha" required />
 
             <div className="submit-container">
               <Link to="/register">
