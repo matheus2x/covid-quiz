@@ -17,6 +17,14 @@ class User extends Model {
   static associate(models) {
     this.belongsTo(models.State, { foreignKey: "state_id", as: "state" });
   }
+
+  checkPassword(password) {
+    if (password === this.password) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 module.exports = User;

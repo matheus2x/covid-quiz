@@ -15,7 +15,7 @@ module.exports = {
     }
 
     const states = await State.findAll({
-      attributes: ["iso_subid", "name", "type"],
+      attributes: ["id", "name", "iso_subid", "type"],
       where: {
         country_id,
       },

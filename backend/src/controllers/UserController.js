@@ -1,3 +1,4 @@
+const Country = require("../models/Country");
 const State = require("../models/State");
 const User = require("../models/User");
 
@@ -9,9 +10,14 @@ module.exports = {
       include: { association: "users" },
     });
 
+    const country = await Country.findByPk(state.country_id, {
+      attributes: ["name"],
+    });
+
     const pasterializedState = {
+      country,
       country_id: state.country_id,
-      name: state.name,
+      state: state.name,
       iso_subid: state.iso_subid,
       type: state.type,
       users: state.users,
@@ -30,6 +36,12 @@ module.exports = {
       return res.status(400).json({ error: "State not found." });
     }
 
+    const userExists = await User.findOne({ where: { username: username } });
+
+    if (userExists) {
+      return res.status(400).json({ error: "User already registered." });
+    }
+
     const user = await User.create({
       name,
       username,
@@ -37,6 +49,11 @@ module.exports = {
       state_id,
     });
 
-    return res.json(user);
+    return res.json({
+      your_name: user.name,
+      your_username: user.username,
+      your_password: user.password,
+      your_state_id: user.state_id,
+    });
   },
 };
