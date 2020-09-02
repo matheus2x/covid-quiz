@@ -54,16 +54,15 @@ The idea of ​​creating an application focused on good practices and access t
   $ git clone https://github.com/matheus2x/covid-quiz.git
 ```
 2. Move yourself to the appropriate directory: `$ cd covid-quiz`
-3. Installing dependencies and starting:
+3. Installing dependencies:
 ```sh
-  ## Server
-  $ cd backend
   $ yarn
-
-  ## In .env.example file, change the credentials.
-  ## Rename .env.example to only .env
 ```
+4. Starting Server:
 ```sh
+  # Enter Server Folder
+  $ cd packages/backend
+
   # Create Database
   $ yarn sequelize db:create
 
@@ -76,10 +75,10 @@ The idea of ​​creating an application focused on good practices and access t
   # Run Server
   $ yarn dev
 ```
+5. Starting Web Page:
 ```sh
-  ## Web
-  $ cd frontend
-  $ yarn
+  # Enter Web Folder
+  $ cd packages/frontend
 
   ## Run Web
   $ yarn start
