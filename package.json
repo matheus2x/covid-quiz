@@ -1,7 +1,11 @@
 {
   "name": "covid-quiz",
-  "description": "",
+  "description": "An academic work by the UNINOVE institution focused on good practices and access to information about covid-19 with a mini-game quiz mask",
   "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "author": {
     "name": "Matheus Henrique",
     "email": "matheushenriqueplus99@gmail.com"
@@ -20,5 +24,8 @@
   "homepage": "https://github.com/matheus2x/covid-quiz#readme",
   "bugs": {
     "url": "https://github.com/matheus2x/covid-quiz#issues"
+  },
+  "dependencies": {
+    "axios": "0.20.0"
   }
 }
