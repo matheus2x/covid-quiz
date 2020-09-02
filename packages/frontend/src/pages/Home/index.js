@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import { numberWithCommas } from "../../utils/addCommasInNumber";
+
 import Header from "../../components/Header";
 
 import sickIcon from "../../assets/home/sick-man.svg";
@@ -9,17 +11,18 @@ import deadIcon from "../../assets/home/dead-man.svg";
 
 import "./styles.css";
 
+
 const Home = () => {
   const [cases, setCases] = useState("Loading");
   const [deaths, setDeaths] = useState("Loading");
   const [recovereds, setRecovereds] = useState("Loading");
 
   const getCovidData = async () => {
-    const res = await axios.get("https://api.covid19api.com/summary");
+    const { data } = await axios.get("https://api.covid19api.com/summary");
 
-    const totalCases = res.data.Global.TotalConfirmed;
-    const totalDeaths = res.data.Global.TotalDeaths;
-    const totalRecovereds = res.data.Global.TotalRecovered;
+    const totalCases = numberWithCommas(data.Global.TotalConfirmed);
+    const totalDeaths = numberWithCommas(data.Global.TotalDeaths);
+    const totalRecovereds = numberWithCommas(data.Global.TotalRecovered);
 
     setCases(totalCases);
     setDeaths(totalDeaths);
