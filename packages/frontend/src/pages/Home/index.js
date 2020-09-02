@@ -15,11 +15,11 @@ const Home = () => {
   const [recovereds, setRecovereds] = useState("Loading");
 
   const getCovidData = async () => {
-    const res = await axios.get("https://covid19api.io/api/v1/AllReports");
+    const res = await axios.get("https://api.covid19api.com/summary");
 
-    const totalCases = res.data.reports[0].cases;
-    const totalDeaths = res.data.reports[0].deaths;
-    const totalRecovereds = res.data.reports[0].recovered;
+    const totalCases = res.data.Global.TotalConfirmed;
+    const totalDeaths = res.data.Global.TotalDeaths;
+    const totalRecovereds = res.data.Global.TotalRecovered;
 
     setCases(totalCases);
     setDeaths(totalDeaths);
