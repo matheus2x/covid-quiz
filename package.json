@@ -26,6 +26,6 @@
     "url": "https://github.com/matheus2x/covid-quiz#issues"
   },
   "dependencies": {
-    "axios": "0.21.1"
+    "axios": "1.6.0"
   }
 }
